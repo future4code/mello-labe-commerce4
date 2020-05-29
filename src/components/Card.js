@@ -28,9 +28,9 @@ const Button = styled.button`
 export const Card = (props) => {
   return (
     <CardContainer>
-      <Img src={props.imageUrl} alt={props.description} />
-      <p>{props.name}</p>
-      <p>R${props.value}</p>
+      <Img src={props.imageUrlProps} alt={props.descriptionProps} />
+      <p>{props.nameProps}</p>
+      <p>R${props.valueProps}</p>
       <Button>Adicionar ao Carrinho</Button>
     </CardContainer>
   );
