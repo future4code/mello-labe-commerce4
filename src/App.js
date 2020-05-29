@@ -1,11 +1,14 @@
 import React from "react";
 import styled from "styled-components";
 
-import { ProductList } from "./components/ProductList";
+import { Home } from "./components/Home";
 
 const AppContainer = styled.div`
-  width: 100%;
   margin: 0;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 20px;
 
   * {
     box-sizing: border-box;
@@ -17,7 +20,7 @@ class App extends React.Component {
   render() {
     return (
       <AppContainer>
-        <ProductList />
+        <Home />
       </AppContainer>
     );
   }
